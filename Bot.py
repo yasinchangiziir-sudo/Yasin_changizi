@@ -2,7 +2,7 @@ import sqlite3, os, time, random
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
+BOT_TOKEN = os.environ.get("8313395074:AAGQyJha6f80c_dE_wTtVQ-CUi_qVd-EmOQ")
 conn = sqlite3.connect("bot.db", check_same_thread=False)
 conn.execute("""CREATE TABLE IF NOT EXISTS users (
     user_id INTEGER PRIMARY KEY, username TEXT, balance REAL DEFAULT 0,
